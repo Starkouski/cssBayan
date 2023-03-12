@@ -35,6 +35,17 @@ img {
     margin: 0 auto;
 }
 
+/* планое открытие-закрытие */
+
+details[open] {
+    animation: slide 1.5s linear;
+  }
+  
+  @keyframes slide {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+
 @media screen and (max-width: 821px) {
     h1 {
         font-size: 35px;
